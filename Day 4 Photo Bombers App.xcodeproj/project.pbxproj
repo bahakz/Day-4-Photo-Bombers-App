@@ -18,6 +18,7 @@
 		8F76B7DA1B2E9EE300102870 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7D91B2E9EE300102870 /* PhotoCollectionViewCell.m */; };
 		8F76B7DC1B2E9FC800102870 /* car_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F76B7DB1B2E9FC800102870 /* car_image.jpg */; };
 		8F76B7E01B2EC9C800102870 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7DF1B2EC9C800102870 /* PhotoController.m */; };
+		8F76B7E31B2ECDC900102870 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7E21B2ECDC900102870 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		8F76B7DB1B2E9FC800102870 /* car_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car_image.jpg; sourceTree = "<group>"; };
 		8F76B7DE1B2EC9C800102870 /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
 		8F76B7DF1B2EC9C800102870 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		8F76B7E11B2ECDC900102870 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8F76B7E21B2ECDC900102870 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CDD4E49970F7E802B3A8B1C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEE766CE38261F4FA89C3FB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DFA3C5C29325874D2327D86D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +111,8 @@
 				8F76B7B71B2E9DCE00102870 /* AppDelegate.m */,
 				8F76B7B91B2E9DCE00102870 /* ViewController.h */,
 				8F76B7BA1B2E9DCE00102870 /* ViewController.m */,
+				8F76B7E11B2ECDC900102870 /* DetailViewController.h */,
+				8F76B7E21B2ECDC900102870 /* DetailViewController.m */,
 				8F76B7D81B2E9EE300102870 /* PhotoCollectionViewCell.h */,
 				8F76B7D91B2E9EE300102870 /* PhotoCollectionViewCell.m */,
 				8F76B7BC1B2E9DCE00102870 /* Main.storyboard */,
@@ -297,6 +302,7 @@
 				8F76B7B81B2E9DCE00102870 /* AppDelegate.m in Sources */,
 				8F76B7B51B2E9DCE00102870 /* main.m in Sources */,
 				8F76B7E01B2EC9C800102870 /* PhotoController.m in Sources */,
+				8F76B7E31B2ECDC900102870 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
