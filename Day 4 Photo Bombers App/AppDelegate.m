@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <SimpleAuth/SimpleAuth.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    SimpleAuth.configuration[@"instagram"] = @{
+                                               @"client_id" : @"46b2716f833443cb9e1646d6081c5ef0",
+                                               SimpleAuthRedirectURIKey : @"http://www.intellection.kz"
+                                               };
+    
     return YES;
 }
 
