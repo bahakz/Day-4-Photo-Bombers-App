@@ -14,6 +14,8 @@
 		8F76B7C01B2E9DCE00102870 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F76B7BF1B2E9DCE00102870 /* Images.xcassets */; };
 		8F76B7C31B2E9DCE00102870 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F76B7C11B2E9DCE00102870 /* LaunchScreen.xib */; };
 		8F76B7CF1B2E9DCE00102870 /* Day_4_Photo_Bombers_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7CE1B2E9DCE00102870 /* Day_4_Photo_Bombers_AppTests.m */; };
+		8F76B7DA1B2E9EE300102870 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7D91B2E9EE300102870 /* PhotoCollectionViewCell.m */; };
+		8F76B7DC1B2E9FC800102870 /* car_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F76B7DB1B2E9FC800102870 /* car_image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		8F76B7C81B2E9DCE00102870 /* Day 4 Photo Bombers AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day 4 Photo Bombers AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F76B7CD1B2E9DCE00102870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F76B7CE1B2E9DCE00102870 /* Day_4_Photo_Bombers_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day_4_Photo_Bombers_AppTests.m; sourceTree = "<group>"; };
+		8F76B7D81B2E9EE300102870 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		8F76B7D91B2E9EE300102870 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		8F76B7DB1B2E9FC800102870 /* car_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car_image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				8F76B7B71B2E9DCE00102870 /* AppDelegate.m */,
 				8F76B7B91B2E9DCE00102870 /* ViewController.h */,
 				8F76B7BA1B2E9DCE00102870 /* ViewController.m */,
+				8F76B7D81B2E9EE300102870 /* PhotoCollectionViewCell.h */,
+				8F76B7D91B2E9EE300102870 /* PhotoCollectionViewCell.m */,
 				8F76B7BC1B2E9DCE00102870 /* Main.storyboard */,
 				8F76B7BF1B2E9DCE00102870 /* Images.xcassets */,
 				8F76B7C11B2E9DCE00102870 /* LaunchScreen.xib */,
@@ -96,6 +103,7 @@
 		8F76B7B21B2E9DCE00102870 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F76B7DB1B2E9FC800102870 /* car_image.jpg */,
 				8F76B7B31B2E9DCE00102870 /* Info.plist */,
 				8F76B7B41B2E9DCE00102870 /* main.m */,
 			);
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F76B7DC1B2E9FC800102870 /* car_image.jpg in Resources */,
 				8F76B7BE1B2E9DCE00102870 /* Main.storyboard in Resources */,
 				8F76B7C31B2E9DCE00102870 /* LaunchScreen.xib in Resources */,
 				8F76B7C01B2E9DCE00102870 /* Images.xcassets in Resources */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F76B7BB1B2E9DCE00102870 /* ViewController.m in Sources */,
+				8F76B7DA1B2E9EE300102870 /* PhotoCollectionViewCell.m in Sources */,
 				8F76B7B81B2E9DCE00102870 /* AppDelegate.m in Sources */,
 				8F76B7B51B2E9DCE00102870 /* main.m in Sources */,
 			);
