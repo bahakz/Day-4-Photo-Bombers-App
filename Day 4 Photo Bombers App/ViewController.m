@@ -17,6 +17,8 @@
 
 @property (nonatomic) NSString *accessToken;
 
+@property (nonatomic) NSMutableArray *photos;
+
 @end
 
 @implementation ViewController
@@ -59,7 +61,7 @@
 -(void) downloadImages
 {
     NSURLSession *session  = [NSURLSession sharedSession];
-    NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/Kazakhstan/media/recent?access_token=%@", self.accessToken];
+    NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/cats/media/recent?access_token=%@", self.accessToken];
 //    NSLog(@"%@", urlString);
     
     NSURL *url = [[NSURL alloc] initWithString:urlString];
@@ -73,6 +75,14 @@
         NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
         
         NSLog(@"response dictionary is : %@", responseDictionary);
+        
+        self.photos = responseDictionary[@"data"];
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+        });
+        
     }];
     
     [task resume];
@@ -87,7 +97,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return [self.photos count];
 }
 
 
@@ -97,7 +107,13 @@
     
     PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.imageView.image = [UIImage imageNamed:@"car_image.jpg"];
+//    cell.imageView.image = [UIImage imageNamed:@"car_image.jpg"];
+    
+    //now we need to parse image from NSDictionary
+    
+    NSDictionary *photo = self.photos[indexPath.row];
+    cell.photo = photo;
+    
     
     return cell;
     
