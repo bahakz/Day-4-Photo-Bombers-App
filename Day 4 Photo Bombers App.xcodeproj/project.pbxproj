@@ -19,6 +19,8 @@
 		8F76B7DC1B2E9FC800102870 /* car_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F76B7DB1B2E9FC800102870 /* car_image.jpg */; };
 		8F76B7E01B2EC9C800102870 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7DF1B2EC9C800102870 /* PhotoController.m */; };
 		8F76B7E31B2ECDC900102870 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7E21B2ECDC900102870 /* DetailViewController.m */; };
+		8F76B7ED1B2ED59900102870 /* PresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7EC1B2ED59900102870 /* PresentDetailTransition.m */; };
+		8F76B7F01B2ED71F00102870 /* dismissDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F76B7EF1B2ED71F00102870 /* dismissDetailTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,11 @@
 		8F76B7DF1B2EC9C800102870 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
 		8F76B7E11B2ECDC900102870 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8F76B7E21B2ECDC900102870 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8F76B7E71B2ED14B00102870 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8F76B7EB1B2ED59900102870 /* PresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentDetailTransition.h; sourceTree = "<group>"; };
+		8F76B7EC1B2ED59900102870 /* PresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentDetailTransition.m; sourceTree = "<group>"; };
+		8F76B7EE1B2ED71F00102870 /* dismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dismissDetailTransition.h; sourceTree = "<group>"; };
+		8F76B7EF1B2ED71F00102870 /* dismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dismissDetailTransition.m; sourceTree = "<group>"; };
 		CDD4E49970F7E802B3A8B1C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEE766CE38261F4FA89C3FB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DFA3C5C29325874D2327D86D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,8 +94,8 @@
 		8F76B7A61B2E9DCE00102870 = {
 			isa = PBXGroup;
 			children = (
+				8F76B7E71B2ED14B00102870 /* Podfile */,
 				8F76B7B11B2E9DCE00102870 /* Day 4 Photo Bombers App */,
-				8F76B7CB1B2E9DCE00102870 /* Day 4 Photo Bombers AppTests */,
 				8F76B7B01B2E9DCE00102870 /* Products */,
 				CF86E7F10E19E7FE7EB32E99 /* Pods */,
 				59EE9DE2CE754AA6EF97B0B7 /* Frameworks */,
@@ -107,12 +114,15 @@
 		8F76B7B11B2E9DCE00102870 /* Day 4 Photo Bombers App */ = {
 			isa = PBXGroup;
 			children = (
+				8F76B7CB1B2E9DCE00102870 /* Day 4 Photo Bombers AppTests */,
 				8F76B7B61B2E9DCE00102870 /* AppDelegate.h */,
 				8F76B7B71B2E9DCE00102870 /* AppDelegate.m */,
 				8F76B7B91B2E9DCE00102870 /* ViewController.h */,
 				8F76B7BA1B2E9DCE00102870 /* ViewController.m */,
 				8F76B7E11B2ECDC900102870 /* DetailViewController.h */,
 				8F76B7E21B2ECDC900102870 /* DetailViewController.m */,
+				8F76B7EB1B2ED59900102870 /* PresentDetailTransition.h */,
+				8F76B7EC1B2ED59900102870 /* PresentDetailTransition.m */,
 				8F76B7D81B2E9EE300102870 /* PhotoCollectionViewCell.h */,
 				8F76B7D91B2E9EE300102870 /* PhotoCollectionViewCell.m */,
 				8F76B7BC1B2E9DCE00102870 /* Main.storyboard */,
@@ -121,6 +131,8 @@
 				8F76B7B21B2E9DCE00102870 /* Supporting Files */,
 				8F76B7DE1B2EC9C800102870 /* PhotoController.h */,
 				8F76B7DF1B2EC9C800102870 /* PhotoController.m */,
+				8F76B7EE1B2ED71F00102870 /* dismissDetailTransition.h */,
+				8F76B7EF1B2ED71F00102870 /* dismissDetailTransition.m */,
 			);
 			path = "Day 4 Photo Bombers App";
 			sourceTree = "<group>";
@@ -142,7 +154,7 @@
 				8F76B7CC1B2E9DCE00102870 /* Supporting Files */,
 			);
 			path = "Day 4 Photo Bombers AppTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		8F76B7CC1B2E9DCE00102870 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -301,7 +313,9 @@
 				8F76B7DA1B2E9EE300102870 /* PhotoCollectionViewCell.m in Sources */,
 				8F76B7B81B2E9DCE00102870 /* AppDelegate.m in Sources */,
 				8F76B7B51B2E9DCE00102870 /* main.m in Sources */,
+				8F76B7ED1B2ED59900102870 /* PresentDetailTransition.m in Sources */,
 				8F76B7E01B2EC9C800102870 /* PhotoController.m in Sources */,
+				8F76B7F01B2ED71F00102870 /* dismissDetailTransition.m in Sources */,
 				8F76B7E31B2ECDC900102870 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
